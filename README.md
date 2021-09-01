@@ -1,7 +1,8 @@
 # GlucoseAPP
 This repository bundles the R code that built Shiny APP [(link)](https://sshsphdemos.shinyapps.io/GlucoseAPP/). 
-For purpose of safe keeping, all relevent code supporting the app is stored in the repository. 
-Users are welcome to run the app on their local machine. Thanks for your support!
+For purpose of safe keeping, all relevent code and resources supporting the app are stored in the repository. 
+Users are welcome to run the app on their local machine. 
+Note that the processed data is loaded directly to facilitate running the app. Relevant code to process data and carry out analysis is bundled in R package (under development. insert link later).
 
 # What the app does
 
