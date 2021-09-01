@@ -42,8 +42,11 @@ server <- function(input, output, session) {
   })
 
   observe({
-    load(sprintf('processed%s',selected_vals$block_lab))
-
+    path <- switch(selected_vals$block_lab,
+                   '2wk' = 'https://www.dropbox.com/s/myii27r52ukyiqm/processed2wk?dl=1',
+                   '3m' = 'https://www.dropbox.com/s/rpuyntip2a4tzum/processed3m?dl=1',
+                   '24h' = 'https://www.dropbox.com/s/ifkubqjgkqzpibb/processed24h?dl=1')
+    load(url(path))
     id <- selected_vals$id
     bl <- selected_vals$bl
     datiT <-
